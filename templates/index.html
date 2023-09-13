@@ -1,0 +1,25 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Heading</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        function changeHeading() {
+            var heading = document.getElementById("interactiveHeading");
+            heading.innerHTML = "Welcome to Margdarshan Flask App";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="interactiveHeading" onclick="changeHeading()"> Welcome to Margdarshan Flask App </h1>
+    <p>  MargDarshan is a pioneering force in the edtech industry, leading the way in education transformation 
+        through the application of AI and ML. 
+        With a specialization in guiding JEE aspirants, 
+        it provides comprehensive study materials, test series, and a college predictor, empowering students on their educational journey. Its mission is both simple and profound: "Education for All." The team is dedicated to
+         ensuring that high-quality education is accessible to every student, regardless of their background. </p>
+</body>
+</html>
